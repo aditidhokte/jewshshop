@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aditi Jewellery Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>✨ Aditi Jewellery Shop ✨</h1>
+  <p>Elegant Designs, Timeless Beauty</p>
+</header>
+
+<nav>
+  <a href="#">Home</a> |
+  <a href="#">Collections</a> |
+  <a href="#">About Us</a> |
+  <a href="#">Contact</a>
+</nav>
+
+<!-- Shop Page -->
+<section id="shop-page">
+  <h2>Our Featured Jewellery</h2>
+
+  <div class="items">
+
+    <!-- Gold Necklace -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1603974372039-adc49044b6bd" alt="Gold Necklace">
+      <h3>Gold Necklace</h3>
+      <p>Beautiful handcrafted gold necklace.</p>
+      <button onclick="showProduct(
+        'Gold Necklace',
+        'https://images.unsplash.com/photo-1603974372039-adc49044b6bd',
+        'Beautiful handcrafted gold necklace',
+        '₹50,000'
+      )">Buy Now</button>
+    </div>
+
+    <!-- Diamond Ring -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1588444650700-3b5f0e6f52b6" alt="Diamond Ring">
+      <h3>Diamond Ring</h3>
+      <p>Elegant diamond ring.</p>
+      <button onclick="showProduct(
+        'Diamond Ring',
+        'https://images.unsplash.com/photo-1588444650700-3b5f0e6f52b6',
+        'Elegant diamond ring',
+        '₹75,000'
+      )">Buy Now</button>
+    </div>
+
+    <!-- Pearl Earrings -->
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638" alt="Earrings">
+      <h3>Pearl Earrings</h3>
+      <p>Classic pearl earrings.</p>
+      <button onclick="showProduct(
+        'Pearl Earrings',
+        'https://images.unsplash.com/photo-1617038220319-276d3cfab638',
+        'Classic pearl earrings',
+        '₹20,000'
+      )">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Product Page -->
+<section id="product-page">
+  <h1 id="product-title"></h1>
+  <img id="product-img">
+  <p id="product-desc"></p>
+  <p id="product-price"></p>
+  <button onclick="goBack()">Back</button>
+</section>
+
+<footer>
+  © 2026 Aditi Jewellery Shop
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
